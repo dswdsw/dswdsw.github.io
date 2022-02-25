@@ -1,13 +1,24 @@
 <html>
-    <head>
-        <meta name="appleid-signin-client-id" content="com.ezviz.smartLifeweb">
-        <meta name="appleid-signin-scope" content="name">
-        <meta name="appleid-signin-redirect-uri" content="https://dogfightx.com/home">
-        <meta name="appleid-signin-state" content="1">
-        <meta name="appleid-signin-use-popup" content="true">
-    </head>
-    <body>
-        <div id="appleid-signin" data-color="black" data-border="true" data-type="sign in"></div>
-        <script type="text/javascript" src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
-    </body>
+<head>
+    <meta charset="UTF-8"> <!-- for HTML5 -->
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="appleid-signin-client-id" content="com.ezviz.smartLifeweb">
+    <meta name="appleid-signin-scope" content="name email">
+    <meta name="appleid-signin-redirect-uri" content="https://dswdsw.github.io/sign.html">
+    <meta name="appleid-signin-state" content="1234567">
+    <!--  <meta name="appleid-signin-use-popup" content="true"> 为true则会新起一个页面 并且授权成功后没有回调，页面动也不懂，不知道是不是新的模式，没搞清楚 所以直接注释掉 -->
+    <style type="text/css">
+        #apple-div {
+            padding-left: 30%;
+            margin: 0 auto;
+        }
+    </style>
+</head>
+<body>
+<div id="apple-div">
+    <div id="appleid-signin" data-color="black" data-border="true" data-type="sign in"></div>
+</div>
+<script type="text/javascript"
+        src="https://appleid.cdn-apple.com/appleauth/static/jsapi/appleid/1/en_US/appleid.auth.js"></script>
+</body>
 </html>
